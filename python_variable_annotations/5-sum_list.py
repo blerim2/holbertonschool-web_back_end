@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-A annonitation functiom that takes an input of lists and returns the sum of a float
+A annonitation function that takes a input of list.
 """
 
 from typing import List
+
 
 def sum_list(input_list: List[float]) -> float:
     """
