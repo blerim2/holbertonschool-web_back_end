@@ -5,9 +5,11 @@ python async
 import asyncio
 
 
-def task_wait_random(max_delay: int) -> asyncio.Task:
-    async def wait_random():
-        await asyncio.sleep(max_delay)
-        print(f"Waited for {max_delay} seconds!")
+wait_random = __import__('0-basic_async_syntax').wait_random
 
-    return asyncio.create_task(wait_random())
+
+def task_wait_random(max_delay: int) -> asyncio.Task:
+    """
+    a function that waits for a task
+    """
+    return asyncio.create_task(wait_random(max_delay))
