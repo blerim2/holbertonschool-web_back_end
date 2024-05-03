@@ -1,1 +1,1 @@
-Paginations
+Pagination
